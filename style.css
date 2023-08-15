@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;
+font-family: 'Big Shoulders Display', cursive;*/
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparent_white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very_light_gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very_light_gray);
+}
+
+.main-container{
+    width: 325px;
+    margin: 87px auto 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+article{
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+}
+.sedans {
+    background-color: var(--Bright_orange);
+}
+.suvs {
+    background-color: var(--Dark_cyan);
+}
+.luxury {
+    background-color: var(--Very_dark_cyan);
+}
+img{
+    margin-bottom: 36px;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.4em;
+    color: var(--Very_light_gray);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+p{
+    color: var(--Transparent_white);
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+button{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--Very_light_gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    }
+
+.sedans button{
+        color: var(--Bright_orange);
+}
+.suvs button{
+        color: var(--Dark_cyan);
+}
+.luxury button{
+    color: var(--Very_dark_cyan);
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid var(--Very_light_gray);
+    color: var(--Transparent_white);
+    cursor: pointer;
+
+}
+
+
+/* footer*/
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a 
+{ color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:944px) {
+    .main-container{
+        width: 924px;
+        display: flex;
+        margin-top: 170px;
+    }
+
+    article{
+        height: 500px;
+    }
+    p{
+        margin-bottom: 80px;
+    }
+}
